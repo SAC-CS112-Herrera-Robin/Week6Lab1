@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class NumberGuess {
+
+	private static Scanner input;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		input= new Scanner(System.in);
+
+		int computerNum;
+		int guess;
+		boolean win=false;
+		computerNum = 0 +(int)(Math.random()* 10);
+		
+		while (win == false){
+		
+			System.out.println("Guess a number between 1 and 10:");
+		guess = input.nextInt();
+	
+	if (guess==computerNum){
+		System.out.println("You win");
+	}	
+	else if (guess > computerNum){
+		System.out.println("Your guess is too high");
+	}
+	else
+		System.out.println("Your guess is too low");
+	}
+		}
+	
+}
