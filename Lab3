@@ -17,15 +17,15 @@ public class NumberGuess {
 			System.out.println("Guess a number between 1 and 10:");
 		guess = input.nextInt();
 	
+		
 	if (guess==computerNum){
 		System.out.println("You win");
-	}	
-	else if (guess > computerNum){
-		System.out.println("Your guess is too high");
 	}
 	else
+		if (guess<computerNum)
 		System.out.println("Your guess is too low");
-	}
+		else
+		System.out.println("your guess is too high");	
 		}
-	
+	}
 }
