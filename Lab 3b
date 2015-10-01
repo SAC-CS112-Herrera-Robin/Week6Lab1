@@ -32,3 +32,5 @@ public class NumberGuess {
 		}
 	}
 }
+
+// Good job, Robin...in 3b, I am looking for solution that uses the  ?: syntax instead of ((guess<1)||(guess>10))
